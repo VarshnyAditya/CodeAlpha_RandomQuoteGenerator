@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a2e; /* Dark navy blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0ff; /* light lavender */
+  transition: background 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #2c2c54, #1a1a2e);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.7); /* neon violet glow */
+  text-align: center;
+  user-select: none;
+}
+
+.quote-box {
+  margin-bottom: 30px;
+}
+
+#quote-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: #e0e0ff; 
+}
+
+#quote-author {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #d1b3ff;
+  margin-bottom: 40px;
+  text-shadow: 0 0 6px #bb33ff88;
+}
+
+#new-quote {
+  background: #bb33ff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow:
+    0 0 8px #bb33ff,
+    0 0 20px #bb33ff,
+    inset 0 -4px 10px #7a00cc;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+#new-quote:hover {
+  background: #d166ff;
+  box-shadow:
+    0 0 15px #e08eff,
+    0 0 30px #e08eff,
+    inset 0 -6px 15px #a041ff;
+  transform: scale(1.05);
+}
+
+#new-quote:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  #quote-text {
+    font-size: 1.4rem;
+  }
+
+  #new-quote {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
